@@ -1,0 +1,110 @@
+.prodcut-detail-wraper {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1.4fr 1fr;
+  color: var(--color-white);
+  padding: 2rem;
+  justify-content: center;
+  align-items: center;
+  align-items: center;
+}
+
+.product-detail {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  row-gap: 1rem;
+  padding: 2rem;
+}
+
+img {
+  width: 100%;
+}
+.main-product img {
+  width: 70rem;
+}
+.sub-product {
+  display: flex;
+  column-gap: 2.5rem;
+  padding: 0.4rem 0.7rem;
+  justify-content: center;
+  align-items: center;
+}
+.sub-product > * {
+  height: 10rem;
+}
+.product-detail-description {
+  color: var(--color-white);
+  font-size: 1.5rem;
+}
+.product-detail-description p {
+  letter-spacing: 0.2em;
+  line-height: 1.5em;
+}
+.product-detail-description .access {
+  display: flex;
+  column-gap: 4rem;
+  justify-content: end;
+  margin-right: 3rem;
+  margin-top: 5rem;
+}
+.product-detail-description .process {
+  display: flex;
+  align-items: center;
+  column-gap: 3rem;
+  color: var(--color-white);
+}
+.product-detail-description .process > p {
+  padding: 0.7rem 1rem;
+  font-size: 1.9rem;
+  text-align: center;
+  display: block;
+  background-color: red;
+  width: 4rem;
+  letter-spacing: 0;
+}
+.product-detail-description .process-product-quantity {
+  color: var(--color-white);
+  font-size: 1.9rem;
+  padding: 0.7rem 1rem;
+}
+.product-detail-description .process-product-quantity:hover {
+  border-color: var(--color-white);
+}
+.product-related-wraper {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+  grid-area: 2/1/3/3;
+  justify-content: center;
+  margin-top: 2rem;
+  background-color: var(--color-gray-700);
+  padding: 2rem 1rem;
+}
+.product-related {
+  display: flex;
+  column-gap: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+.product-related figcaption {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-top: 0.7rem;
+}
+.product-related figure {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.product-related figure img {
+  width: 20rem;
+  height: 15rem;
+}
+.other-product-name {
+  font-size: 1.4rem;
+  margin: 0.6rem 0;
+  font-weight: 400;
+}

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/normalize.css" />
+    <link rel="stylesheet" href="../fontawesome/css/all.css" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/products.css" />
+    <!-- <link rel="stylesheet" hef="/swiper/swiper.min.css" /> -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script type="module" src="/javaScript/script.js"></script>
+    <script type="module" src="/javaScript/products.js"></script>
+    <script type="module" src="/javaScript/Navbar.js"></script>
+    <script type="module" src="/javaScript/buyProduct.js"></script>
+    <title>All Product</title>
+  </head>
+  <body>
+    <div id="main-container" class="all-product-page-container">
+      <header id="main-head" class="main-head">
+        <nav class="navbar-container">
+          <ul class="navbar">
+            <li>
+              <i class="fa fa-search-dollar icon-search"></i>
+            </li>
+            <li id="home">Home</li>
+            <li id="shop" class="active">Shop</li>
+            <li id="aboutUs">About us</li>
+            <li id="contact">Contact</li>
+          </ul>
+        </nav>
+        <!-- 1200px screen -->
+        <div class="bars">
+          <i id="nav-icon" class="fa fa-bars bar-icon"></i>
+          <i id="nav-icon" class="fa fa-search-dollar icon-search"></i>
+        </div>
+        <!-- end 1200px screen -->
+        <!-- Search Feature -->
+        <div class="search-container">
+          <i class="fa fa-search-dollar"></i>
+          <input
+            id="search"
+            type="text"
+            placeholder="Search..."
+            class="search-feature"
+          />
+          <i class="fa fa-xmark"></i>
+        </div>
+        <!--End of  Search Feature -->
+        <div class="logo-container">
+          <image src="../Image/logo2.png" class="logo" />
+        </div>
+        <div class="icon-cart-container sm">
+          <i id="nav-icon" class="fa fa-cart-shopping icon-cart sm"></i>
+          <span class="product-total-quantity">0</span>
+        </div>
+        <div class="navbar-container">
+          <ul class="navbar left-cart">
+            <li>Sing in</li>
+            <li>
+              <div class="icon-cart-container lg">
+                <i id="nav-icon" class="fa fa-cart-shopping icon-cart lg"></i>
+                <span class="product-total-quantity">0</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </header>
+      <main id="main-product-page" class="main-product-page">
+        <section class="shop-product-info-list">
+          <section class="category-list">
+            <h1>Category</h1>
+          </section>
+          <section class="shop-products">
+            <h2 class="divider gradient heading-hero">Our Promotion</h2>
+            <section class="shop-product-list"></section>
+            <div class="pages"></div>
+          </section>
+        </section>
+      </main>
+      <footer id="main-footer" class="main-footer shop-products-footer">
+        <div>
+          <img src="/Image/logo2.png" />
+        </div>
+        <ul class="footer-nav">
+          <li>Home</li>
+          <li>Shop</li>
+          <li>Contact</li>
+          <li>About Us</li>
+        </ul>
+        <ul class="footer-nav">
+          <li>Open</li>
+          <li>7am-7pm</li>
+          <li>Monday-Friday</li>
+        </ul>
+        <ul class="footer-nav">
+          <li>Our service</li>
+          <li>Repair</li>
+          <li>Buy and Sell</li>
+        </ul>
+      </footer>
+    </div>
+    <!-- template category -->
+    <template id="template-category">
+      <div class="category">
+        <i></i>
+        <p></p>
+      </div>
+    </template>
+    <!-- End template category  -->
+    <!-- template shop product  -->
+    <template id="template-shop-product">
+      <article class="shop-product">
+        <img class="shop-product-image" />
+        <div class="shop-product-info">
+          <div class="product-category-list"></div>
+          <div class="product-info">
+            <a href="product.html" class="product-name"></a>
+            <p></p>
+          </div>
+          <div class="line"></div>
+          <div class="shop-product-footer">
+            <h3 class="price"></h3>
+            <a href="cart.html" class="btn btn-red buy">Buy Now</a>
+          </div>
+        </div>
+      </article>
+    </template>
+    <!-- end of template shop product  -->
+    <!-- GO Page -->
+    <template id="template-go-page">
+      <h4 class="page"></h4>
+    </template>
+    <!-- end of GO Page -->
+  </body>
+</html>

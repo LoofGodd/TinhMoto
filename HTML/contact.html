@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/normalize.css" />
+    <link rel="stylesheet" href="../fontawesome/css/all.css" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/contact.css" />
+    <!-- <link rel="stylesheet" hef="/swiper/swiper.min.css" /> -->
+
+    <script type="module" src="/javaScript/script.js"></script>
+    <script type="module" src="/javaScript/products.js"></script>
+    <script type="module" src="/javaScript/Navbar.js"></script>
+    <title>Cart</title>
+  </head>
+  <body>
+    <div id="main-container" class="cart-page-container">
+      <header id="main-head" class="main-head">
+        <nav class="navbar-container">
+          <ul class="navbar">
+            <li>
+              <i class="fa fa-search-dollar icon-search"></i>
+            </li>
+            <li id="home">Home</li>
+            <li id="shop">Shop</li>
+            <li id="aboutUs">About us</li>
+            <li id="contact" class="active">Contact</li>
+          </ul>
+        </nav>
+        <!-- 1200px screen -->
+        <div class="bars">
+          <i id="nav-icon" class="fa fa-bars bar-icon"></i>
+          <i id="nav-icon" class="fa fa-search-dollar icon-search"></i>
+        </div>
+        <!-- end 1200px screen -->
+        <!-- Search Feature -->
+        <div class="search-container">
+          <i class="fa fa-search-dollar"></i>
+          <input
+            id="search"
+            type="text"
+            placeholder="Search..."
+            class="search-feature"
+          />
+          <i class="fa fa-xmark"></i>
+        </div>
+        <!--End of  Search Feature -->
+        <div class="logo-container">
+          <image src="../Image/logo2.png" class="logo" />
+        </div>
+        <div class="icon-cart-container sm">
+          <i id="nav-icon" class="fa fa-cart-shopping icon-cart sm"></i>
+          <span class="product-total-quantity">0</span>
+        </div>
+        <div class="navbar-container">
+          <ul class="navbar left-cart">
+            <li>Sing in</li>
+            <li>
+              <div class="icon-cart-container lg">
+                <i id="nav-icon" class="fa fa-cart-shopping icon-cart lg"></i>
+                <span class="product-total-quantity">0</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </header>
+      <main>
+        <h2 class="divider gradient white heading-hero">Contact Page</h2>
+        <form class="contact">
+          <label>Email</label>
+          <input type="email" placeholder="Your Email" />
+          <label>Description</label>
+          <textarea placeholder="what's on your mind?"></textarea>
+          <button class="btn btn-red">Summit</button>
+        </form>
+      </main>
+      <footer id="main-footer" class="main-footer shop-products-footer">
+        <div>
+          <img src="/Image/logo2.png" />
+        </div>
+        <ul class="footer-nav">
+          <li>Home</li>
+          <li>Shop</li>
+          <li>Contact</li>
+          <li>About Us</li>
+        </ul>
+        <ul class="footer-nav">
+          <li>Open</li>
+          <li>7am-7pm</li>
+          <li>Monday-Friday</li>
+        </ul>
+        <ul class="footer-nav">
+          <li>Our service</li>
+          <li>Repair</li>
+          <li>Buy and Sell</li>
+        </ul>
+      </footer>
+    </div>
+  </body>
+</html>

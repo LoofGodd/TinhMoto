@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/normalize.css" />
+    <link rel="stylesheet" href="../fontawesome/css/all.css" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/products.css" />
+    <link rel="stylesheet" href="../css/cart.css" />
+    <link rel="stylesheet" href="../css/checkout.css" />
+
+    <!-- <link rel="stylesheet" hef="/swiper/swiper.min.css" /> -->
+
+    <script type="module" src="/javaScript/checkout.js"></script>
+    <script type="module" src="/javaScript/script.js"></script>
+    <script type="module" src="/javaScript/products.js"></script>
+    <script type="module" src="/javaScript/Navbar.js"></script>
+    <script type="module" src="/javaScript/cart.js"></script>
+    <title>Check Out</title>
+  </head>
+  <body>
+    <div id="main-container" class="cart-page-container">
+      <header id="main-head" class="main-head">
+        <nav class="navbar-container">
+          <ul class="navbar">
+            <li>
+              <i class="fa fa-search-dollar icon-search"></i>
+            </li>
+            <li id="home">Home</li>
+            <li id="shop">Shop</li>
+            <li id="aboutUs">About us</li>
+            <li id="contact">Contact</li>
+          </ul>
+        </nav>
+        <!-- 1200px screen -->
+        <div class="bars">
+          <i id="nav-icon" class="fa fa-bars bar-icon"></i>
+          <i id="nav-icon" class="fa fa-search-dollar icon-search"></i>
+        </div>
+        <!-- end 1200px screen -->
+        <!-- Search Feature -->
+        <div class="search-container">
+          <i class="fa fa-search-dollar"></i>
+          <input
+            id="search"
+            type="text"
+            placeholder="Search..."
+            class="search-feature"
+          />
+          <i class="fa fa-xmark"></i>
+        </div>
+        <!--End of  Search Feature -->
+        <div class="logo-container">
+          <image src="../Image/logo2.png" class="logo" />
+        </div>
+        <div class="icon-cart-container sm">
+          <i id="nav-icon" class="fa fa-cart-shopping icon-cart sm"></i>
+          <span class="product-total-quantity">0</span>
+        </div>
+        <div class="navbar-container">
+          <ul class="navbar left-cart">
+            <li>Sing in</li>
+            <li>
+              <div class="icon-cart-container lg">
+                <i id="nav-icon" class="fa fa-cart-shopping icon-cart lg"></i>
+                <span class="product-total-quantity">0</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </header>
+      <main>
+        <div class="thank-you">
+          <i class="fa-solid fa-heart"></i>
+          <h1>Thank You for tasting My App.</h1>
+          <h1>
+            There are lot to optimize, But I don't time because I run of time
+            :P. Sorry This was my first biggest website and also the project for
+            my teacher and now I only have about 1 and haft week more. and I
+            have to make 2 similar websites by using Bootstrap and React
+          </h1>
+        </div>
+        <h2 class="divider gradient white heading-hero">Your Orders</h2>
+        <div class="check-out-show-product">
+          <h1>This is all you love? Interesting!</h1>
+          <div class="check-out-product-container">
+            <div class="check-out-product-wrapper"></div>
+            <div class="total">
+              <span>Total Price</span>
+              <span class="checkout-total-price"></span>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer id="main-footer" class="main-footer shop-products-footer">
+        <div>
+          <img src="/Image/logo2.png" />
+        </div>
+        <ul class="footer-nav">
+          <li>Home</li>
+          <li>Shop</li>
+          <li>Contact</li>
+          <li>About Us</li>
+        </ul>
+        <ul class="footer-nav">
+          <li>Open</li>
+          <li>7am-7pm</li>
+          <li>Monday-Friday</li>
+        </ul>
+        <ul class="footer-nav">
+          <li>Our service</li>
+          <li>Repair</li>
+          <li>Buy and Sell</li>
+        </ul>
+      </footer>
+    </div>
+    <template class="template-check-product">
+      <figure>
+        <div>
+          <img src="/Image/Motos/1 Icon Scheene/icon Sheene-main.jpg" />
+          <p>Icon ShCheene</p>
+        </div>
+        <figcaption>
+          <span>X</span>
+          <span class="count">10</span>
+        </figcaption>
+      </figure>
+    </template>
+  </body>
+</html>

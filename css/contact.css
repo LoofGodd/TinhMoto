@@ -1,0 +1,30 @@
+.cart-page-container {
+  grid-template-rows: auto 1fr 1fr !important;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  color: var(--color-white);
+  width: 35%;
+  row-gap: 1rem;
+  margin: 0 auto;
+  border: 3px solid var(--color-red-primary);
+  padding: 2rem 2.4rem;
+}
+.contact label {
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+.contact input,
+.contact textarea {
+  border: 2px solid var(--color-red-primary);
+  background: none;
+  outline: none;
+  padding: 0.7rem 2rem;
+  color: var(--color-white);
+}
+.contact textarea {
+  max-width: 100%;
+  max-height: 30rem;
+}

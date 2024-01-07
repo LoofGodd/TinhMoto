@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/normalize.css" />
+    <link rel="stylesheet" href="../fontawesome/css/all.css" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script type="module" src="/javaScript/index.js"></script>
+    <script type="module" src="/javaScript/script.js"></script>
+    <script type="module" src="/javaScript/Navbar.js"></script>
+    <script type="module" src="/javaScript/buyProduct.js"></script>
+    <title>Tinh Moto</title>
+  </head>
+  <body>
+    <div id="main-container" class="main-container">
+      <div id="main-head" class="main-head">
+        <nav class="navbar-container">
+          <ul class="navbar">
+            <li>
+              <i class="fa fa-search-dollar icon-search"></i>
+            </li>
+            <li id="home" class="active">Home</li>
+            <li id="shop">Shop</li>
+            <li id="aboutUs">About us</li>
+            <li id="contact">Contact</li>
+          </ul>
+        </nav>
+        <!-- 1200px screen -->
+        <div class="bars">
+          <i id="nav-icon" class="fa fa-bars bar-icon"></i>
+          <i id="nav-icon" class="fa fa-search-dollar icon-search"></i>
+        </div>
+        <!-- end 1200px screen -->
+        <!-- Search Feature -->
+        <div class="search-container">
+          <i class="fa fa-search-dollar"></i>
+          <input
+            id="search"
+            type="text"
+            placeholder="Search..."
+            class="search-feature"
+          />
+          <i class="fa fa-xmark"></i>
+        </div>
+        <!--End of  Search Feature -->
+        <div class="logo-container">
+          <image src="../Image/logo2.png" class="logo" />
+        </div>
+        <div class="icon-cart-container sm">
+          <i id="nav-icon" class="fa fa-cart-shopping icon-cart sm"></i>
+          <span class="product-total-quantity">0</span>
+        </div>
+        <div class="navbar-container">
+          <ul class="navbar left-cart">
+            <li>Sing in</li>
+            <li>
+              <div class="icon-cart-container lg">
+                <i id="nav-icon" class="fa fa-cart-shopping icon-cart lg"></i>
+                <span class="product-total-quantity">0</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <main class="the-main">
+        <!-- Image Slide -->
+        <div class="image-banner-container">
+          <figure class="firgure">
+            <image src="../Image/Motos/Kawasaki/slide.jpg" />
+            <figcaption class="firgure-text">
+              <span class="year"
+                >2024 MODEL | <span class="red-text">2023</span></span
+              >
+              <span class="font-lg font-bold block"
+                >NINJA H2<sup>®</sup>R
+              </span>
+              <span class="font-md font-simibold"> Absolute Domination</span>
+            </figcaption>
+          </figure>
+        </div>
+        <!-- End of Image Slide -->
+
+        <!-- Show Feature Product -->
+        <div style="width: 100vw">
+          <h2 class="divider gradient heading-hero">Trending Products</h2>
+
+          <div class="product-list">
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper shop-product-list"></div>
+            </div>
+          </div>
+        </div>
+        <!-- End Of Show Feature Product -->
+
+        <h2 class="divider gradient heading-hero">Trending Products</h2>
+        <!-- Best Product Detail -->
+        <div class="best-product-detail-wrap">
+          <figure class="best-product-detail">
+            <img
+              src="/Image/Motos/Kawasaki/main.png"
+              class="product-detail-image frame"
+            />
+            <figcaption class="product-detail-text">
+              <h1 class="heading-hero" style="font-size: 2rem">
+                THIS ONE is NASTY
+              </h1>
+              <p style="line-height: 2em; letter-spacing: 0.1em">
+                Experience the awe-inspiring
+                <span
+                  ><a
+                    href="product.html"
+                    class="product-name"
+                    data-product-id="20"
+                    style="color: black"
+                    >Kawasaki Ninja H2R</a
+                  ></span
+                >, a motorcycle that redefines the limits of speed, power, and
+                engineering prowess. With its striking design, including carbon
+                fiber fairings and aggressive styling, the Ninja H2R demands
+                attention. Its supercharged 998cc inline-four engine unleashes
+                an astonishing 310 horsepower, propelling riders from 0 to 60
+                mph in mere seconds. With a top speed surpassing 250 mph, this
+                track-focused hyperbike combines advanced aerodynamics, a
+                lightweight frame, and cutting-edge technology for unparalleled
+                stability and control. The Kawasaki Ninja H2R is a true
+                masterpiece that embodies the relentless pursuit of performance,
+                captivating the senses and leaving a lasting impression on all
+                who witness its extraordinary capabilities.
+              </p>
+              <a href="cart.html" class="btn btn-red buy" data-product-id="20">
+                BUY RIGHT NOW!
+              </a>
+            </figcaption>
+          </figure>
+        </div>
+        <!-- End of Best Product Detail -->
+
+        <!-- Show All Brand Motos -->
+        <div class="show-all-brand-wrap">
+          <h2 class="divider gradient heading-hero">Popular brands</h2>
+          <ul id="show-all-brands" class="show-all-brands"></ul>
+        </div>
+        <!-- End of Show All Brand Motos -->
+        <!-- Promotion -->
+        <div class="promotion-wrap">
+          <h2 class="divider gradient heading-hero">Our Promotion</h2>
+          <figure class="promotion">
+            <div class="promotion-image-wrap">
+              <img
+                src="/Image/Motos/NCR MH TT/main.jpeg"
+                class="promotion-image"
+              />
+              <p>50% OFF!</p>
+            </div>
+            <figcaption class="promotion-text">
+              <h1>
+                If you're a true moto lover, this is something you never want to
+                miss.
+              </h1>
+
+              <p>
+                Experience the thrill of the NCR MH TT (Mike Hailwood moto) with
+                our exclusive promotion. Don't let this opportunity pass you by,
+                as it's a must for any true motorcycle enthusiast.
+              </p>
+              <a href="cart.html" class="btn btn-red buy" data-product-id="18"
+                >I want it</a
+              >
+            </figcaption>
+          </figure>
+        </div>
+        <!-- end of  Promotion -->
+      </main>
+      <footer id="main-footer" class="main-footer">
+        <div>
+          <img src="/Image/logo2.png" />
+        </div>
+        <ul class="footer-nav">
+          <li>Home</li>
+          <li>Shop</li>
+          <li>Contact</li>
+          <li>About Us</li>
+        </ul>
+        <ul class="footer-nav">
+          <li>Open</li>
+          <li>7am-7pm</li>
+          <li>Monday-Friday</li>
+        </ul>
+        <ul class="footer-nav">
+          <li>Our service</li>
+          <li>Repair</li>
+          <li>Buy and Sell</li>
+        </ul>
+      </footer>
+      <div id="sidebar" class="sidebar">
+        <i id="nav-icon" class="fa fa-xmark x-icon"></i>
+        <ul class="navbar vertical">
+          <li class="container-logo">
+            <image src="../Image/Logo.png" class="logo" />
+          </li>
+          <li>Home</li>
+          <li>Shop</li>
+          <li>About us</li>
+          <li>Contact</li>
+        </ul>
+        <button class="btn btn-red signIn">Sign In</button>
+      </div>
+    </div>
+
+    <!-- Product Template -->
+    <template id="template-product">
+      <div class="swiper-slide">
+        <figure class="product">
+          <div class="frame">
+            <img class="product-image" />
+          </div>
+          <a
+            href="product.html"
+            class="font-bold font-md my-md product-description product-name"
+          ></a>
+          <div class="HWrap">
+            <figcaption
+              class="product-price red-text font-bold font-md"
+            ></figcaption>
+
+            <a href="cart.html" class="btn btn-red buy">Buy Now</a>
+          </div>
+        </figure>
+      </div>
+    </template>
+    <!-- End of Product Template -->
+    <!-- brand template -->
+    <template id="template-brand">
+      <li class="brand">
+        <img
+          src="/Image/Motos/Energica/Energica Ego 45 Limited Editon-green.png"
+          style="width: 8rem"
+        />
+      </li>
+    </template>
+    <!-- end of brand template -->
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      })
+    </script>
+  </body>
+</html>

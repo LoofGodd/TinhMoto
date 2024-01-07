@@ -1,0 +1,36 @@
+.cart-page-container {
+  background: var(--color-white) !important;
+  grid-template-rows: auto 1fr auto !important;
+}
+
+.about-us {
+  display: flex;
+  flex-direction: column;
+  row-gap: 3rem;
+  width: 80%;
+  margin: 0 auto;
+}
+.about-us figcaption {
+  font-size: 1.2rem;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  line-height: 1.3em;
+}
+.about-us-tell-H {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 3rem;
+}
+.about-us-tell-H > * {
+  flex-basis: 50%;
+}
+.about-us-tell-V {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 2rem;
+  width: 50%;
+  margin: 0 auto;
+}

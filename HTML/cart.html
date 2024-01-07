@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/normalize.css" />
+    <link rel="stylesheet" href="../fontawesome/css/all.css" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/products.css" />
+    <link rel="stylesheet" href="../css/cart.css" />
+
+    <script type="module" src="/javaScript/script.js"></script>
+    <script type="module" src="/javaScript/products.js"></script>
+    <script type="module" src="/javaScript/Navbar.js"></script>
+    <script type="module" src="/javaScript/cart.js"></script>
+    <title>Cart</title>
+  </head>
+  <body>
+    <div id="main-container" class="cart-page-container">
+      <header id="main-head" class="main-head">
+        <nav class="navbar-container">
+          <ul class="navbar">
+            <li>
+              <i class="fa fa-search-dollar icon-search"></i>
+            </li>
+            <li id="home">Home</li>
+            <li id="shop">Shop</li>
+            <li id="aboutUs">About us</li>
+            <li id="contact">Contact</li>
+          </ul>
+        </nav>
+        <!-- 1200px screen -->
+        <div class="bars">
+          <i id="nav-icon" class="fa fa-bars bar-icon"></i>
+          <i id="nav-icon" class="fa fa-search-dollar icon-search"></i>
+        </div>
+        <!-- end 1200px screen -->
+        <!-- Search Feature -->
+        <div class="search-container">
+          <i class="fa fa-search-dollar"></i>
+          <input
+            id="search"
+            type="text"
+            placeholder="Search..."
+            class="search-feature"
+          />
+          <i class="fa fa-xmark"></i>
+        </div>
+        <!--End of  Search Feature -->
+        <div class="logo-container">
+          <image src="../Image/logo2.png" class="logo" />
+        </div>
+        <div class="icon-cart-container sm">
+          <i id="nav-icon" class="fa fa-cart-shopping icon-cart sm"></i>
+          <span class="product-total-quantity">0</span>
+        </div>
+        <div class="navbar-container">
+          <ul class="navbar left-cart">
+            <li>Sing in</li>
+            <li>
+              <div class="icon-cart-container lg">
+                <i
+                  id="nav-icon"
+                  class="fa fa-cart-shopping icon-cart active lg"
+                ></i>
+                <span class="product-total-quantity">0</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </header>
+      <main>
+        <h2 class="divider gradient white heading-hero">Our Promotion</h2>
+        <section class="cart-table-container">
+          <div class="cart-table">
+            <div class="cart-table-head row">
+              <h3>ID</h3>
+              <h3>Product</h3>
+              <h3>Name</h3>
+              <h3>Price</h3>
+              <h3>Quantity</h3>
+              <h3>Total</h3>
+            </div>
+            <div class="cart-table-body row final-calculate">
+              <h3></h3>
+              <h3></h3>
+              <h3></h3>
+              <h3></h3>
+              <h3 class="final-price">900000$</h3>
+            </div>
+          </div>
+          <a href="./checkout.html" class="btn btn-red check-out"
+            >Check Out Now</a
+          >
+        </section>
+      </main>
+      <footer id="main-footer" class="main-footer shop-products-footer">
+        <div>
+          <img src="/Image/logo2.png" id="logo" />
+        </div>
+        <ul class="footer-nav">
+          <li>Home</li>
+          <li>Shop</li>
+          <li>Contact</li>
+          <li>About Us</li>
+        </ul>
+        <ul class="footer-nav">
+          <li>Open</li>
+          <li>7am-7pm</li>
+          <li>Monday-Friday</li>
+        </ul>
+        <ul class="footer-nav">
+          <li>Our service</li>
+          <li>Repair</li>
+          <li>Buy and Sell</li>
+        </ul>
+      </footer>
+    </div>
+
+    <template id="template-product-cart">
+      <div class="cart-table-body row">
+        <h3 class="product-cart-id"></h3>
+        <h3 class="product-cart-image">
+          <img src="/Image/Motos/1 Icon Scheene/icon Sheene-main.jpg" />
+        </h3>
+        <a href="product.html" class="product-cart-name product-name"></a>
+        <h3 class="product-cart-price"></h3>
+        <div class="cart-quantity">
+          <div class="modify-quantity">
+            <i
+              id="increase-product-quantity"
+              class="fa-solid fa-plus process-product-quantity"
+            ></i>
+            <p class="product-quantity"></p>
+            <i
+              id="decrease-product-quantity"
+              class="fa-solid fa-minus process-product-quantity"
+            ></i>
+          </div>
+        </div>
+        <h3 class="product-cart-total"></h3>
+      </div>
+    </template>
+  </body>
+</html>
