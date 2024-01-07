@@ -1,3 +1,3 @@
 ##Tinh Moto 
 
-This was my first website, I dicided to push it into github btw. :) 
+This was my first website, I decided to push it into GitHub btw. :) 
